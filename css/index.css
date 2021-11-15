@@ -1,0 +1,25 @@
+@media screen and (max-width: 480px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        text-align: center;
+        display: block;
+    }
+
+    .regbutton {
+        padding: 10px 15px;
+        margin-right: 5px;
+    }
+
+    .logbutton {
+        padding: 10px 15px;
+        margin-right: 0px;
+    }
+
+    .hidswbtn {
+        display: block;
+    }
+
+}

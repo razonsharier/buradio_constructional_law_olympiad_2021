@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    background-color: #fafafa;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333333;
+}
+
+header > a > img {
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+.header-background {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dadada;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header-container {
+    max-width: 1050px;
+    margin: auto;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+header > a > img {
+    margin-top: 7px;
+    float: left;
+}
+label {
+    float: left;
+}
+input {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 460px;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid rgb(112, 112, 112);
+    outline: none;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.search_icon {
+    background-image: url("../media/search.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 98% center;
+    opacity: 0.7;
+}
+.article-btn {
+    float: right;
+    padding: 7px 30px;
+    background-color: #007CC7;
+    color: #F3F3F3;
+    margin: 12px 10px;
+    border-radius: 25px;
+    border: 1px solid #007CC7;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+.article-btn:hover {
+    background-color: #4DA8DA;
+    border: 1px solid #4DA8DA;
+    transition: 0.3s;
+}
+.home-btn {
+    float: right;
+    opacity: 0.6;
+    margin-right: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.home-btn:hover {
+    opacity: 0.8;
+}
+.body-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.about-container {
+    margin: auto 5px;
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.about-content {
+    padding: 0px 10px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.blog-content {
+    max-width: 800px;
+    text-align: justify;
+    clear: both;
+    margin-bottom: 100px;
+    font-size: 14px;
+    margin: auto;
+}
+button {
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 7px 30px;
+    background-color: #007CC7;
+    color: #F3F3F3;
+    margin: 12px 10px;
+    border-radius: 25px;
+    border: 1px solid #007CC7;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+}
+button:hover {
+    background-color: #4DA8DA;
+    border: 1px solid #4DA8DA;
+    transition: 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+table td,
+table th {
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table tr {
+    min-height: 100px;
+    width: 400px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #ddd;
+}
+
+.ttitle {
+    font-size: 14px;
+}
+
+.tvalue {
+    margin-top: -10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+
+.pay_due {
+    background-color: red;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.pay_done {
+    background-color: green;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.pay_chk {
+    background-color: orange;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.errormsg {
+    clear: both;
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #bababa;
+    color: red;
+    width: 300px;
+    height: 18px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    table {
+        border-collapse: collapse;
+        max-width: 400px;
+        margin: 0 auto;
+
+    }
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        text-align: left;
+        padding: 0px 15px 10px 15px;
+    }
+
+}
+

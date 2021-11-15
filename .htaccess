@@ -1,0 +1,38 @@
+RewriteEngine on
+RewriteRule ^home?$ index.php?go=home
+RewriteRule ^regChecker?$ index.php?go=regChecker
+#RewriteRule ^scoreboard?$ index.php?go=scoreboard
+RewriteRule ^login?$ index.php?go=login
+RewriteRule ^registration?$ index.php?go=registration
+RewriteRule ^forgetpass?$ index.php?go=forgetpass
+RewriteRule ^dashboard?$ index.php?go=profile
+#RewriteRule ^viva?$ index.php?go=viva
+#RewriteRule ^score?$ index.php?go=score
+RewriteRule ^dismis?$ index.php?go=dismis
+RewriteRule ^logout?$ index.php?go=logout
+RewriteRule ^quiz?$ index.php?go=quiz
+RewriteRule ^admin131?$ index.php?go=admin131
+RewriteRule ^admin1311?$ index.php?go=admin1311
+RewriteRule ^questions?$ phpages/fetchdata.php
+RewriteRule ^result?$ phpages/result.php
+RewriteRule ^final-round?$ index.php?go=final-round
+RewriteRule ^final-quiz?$ index.php?go=final-quiz
+RewriteRule ^final-questions?$ phpages/final-fetchdata.php
+RewriteRule ^final-result?$ phpages/final-result.php
+RewriteRule ^admin_screenshotDetails?$ php/view-screenshotDetails.php
+
+
+RewriteRule ^reset/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ phpages/reset-pass.php?typeId=password&userId=$1&requestId=$2 [NC,L]
+
+# Disable Directory Browsing ---
+Options All -Indexes
+
+# File upload max-size ---
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+php_value max.execution_time 300
+
+# SSL certificate ---
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+

@@ -1,0 +1,480 @@
+@font-face {
+    font-family: 'bangla';
+    src: url('fonts/kalpurush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+#bodycontainer {
+    margin-bottom: 50px;
+}
+
+#header {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+#navmenu {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* nav menu */
+ul {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #000;
+    overflow: hidden;
+    font-family: bangla;
+}
+
+ul li {
+    float: left;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 10px 25px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+li a:hover {
+    background-color: rgb(212, 212, 212);
+    border-radius: 3px;
+}
+
+.liactive {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 600;
+}
+
+.dropcontent {
+    background-color: #f1efef;
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #ddd;
+}
+
+.dropcontent a {
+    display: block;
+    color: #000;
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+/* divide into 2 part */
+.left {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+    margin-top: 13px;
+}
+
+/* banner elements */
+#banner {
+    background-color: #f1f1f1;
+}
+
+#bannerpic {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 5px;
+}
+
+#bannerpic img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    max-width: 900px;
+    height: auto;
+    width: 100%;
+}
+
+.regbutton {
+    font-family: bangla;
+    font-size: 16px;
+    border: 1px solid #178e17;
+    background-color: #178e17;
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.regbutton:hover {
+    background-color: #268126;
+}
+
+.logbutton {
+    font-family: bangla;
+    font-size: 16px;
+    border: 1px solid #5a6dff;
+    background-color: #5a6dff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.logbutton:hover {
+    background-color: #4c61ff;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+    height: 100%;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+#notice {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: bangla;
+    font-size: 18px;
+    min-height: 80px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.noticetext {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+#loginfield {
+    margin: 0 auto;
+    max-width: 600px;
+    font-family: bangla;
+    font-size: 18px;
+    min-height: 350px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#formcontainer {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#formwidth {
+    margin: 0 auto;
+    max-width: 420px;
+    background-color: #ffffff;
+}
+
+label {
+    font-size: 16px;
+    float: left;
+    padding: 3px 0px;
+    margin-top: 10px;
+}
+
+input {
+    max-width: 420px;
+    height: 30px;
+    width: 100%;
+    font-family: Arial, bangla, sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid rgb(112, 112, 112);
+    outline: none;
+    padding-left: 5px;
+}
+
+button {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+}
+
+input[type="file"] {
+    padding: 3px;
+}
+
+.errormsg {
+    clear: both;
+    margin: 0 auto;
+    font-size: 16px;
+    background: #e22525;
+    color: #ffffff;
+    max-width: 420px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.outbutton {
+    font-family: bangla;
+    font-size: 16px;
+    border: 1px solid #e22525;
+    background-color: #e22525;
+    padding: 10px 15px;
+    /* 10, 25 */
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.outbutton:hover {
+    background-color: #b61c1c;
+}
+
+#navitem {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 0px;
+}
+
+#containbody {
+    margin: 0 auto;
+    max-width: 900px;
+    font-family: Arial, bangla, Helvetica, sans-serif;
+    font-size: 18px;
+    min-height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    overflow: auto;
+    text-align: center;
+}
+
+#userdtls {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: Arial, bangla, Helvetica, sans-serif;
+    min-height: 80px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    margin-top: 60px;
+    text-align: right;
+    line-height: 5px;
+    padding-right: 10px;
+}
+
+#quizbody {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 180px;
+    padding: 0px 5px;
+}
+
+.quizbutton {
+    font-family: bangla;
+    font-size: 16px;
+    border: 1px solid #5a6dff;
+    background-color: #5a6dff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.quizbutton:hover {
+    background-color: #4c61ff;
+}
+
+.scorebutton {
+    font-family: bangla;
+    font-size: 16px;
+    border: 1px solid #5a6dff;
+    background-color: #5a6dff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+.scorebutton:hover {
+    background-color: #4c61ff;
+}
+
+
+#quizquebody {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: bangla;
+    font-size: 18px;
+    min-height: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    overflow: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#quizpretext {
+    float: left;
+    margin-left: 25px;
+    text-align: left;
+}
+
+#counttimer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+
+.regdonepass {
+    margin: 0 auto;
+    font-size: 16px;
+    background: #178e17;
+    color: #ffffff;
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    font-family: bangla;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 400px;
+    font-family: Arial, bangla, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+td,
+th {
+    padding: 10px;
+    max-width: 400px;
+    border: 1px solid #D9E4E6;
+}
+
+.responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+    color: #024457;
+    margin-bottom: 50px;
+}
+
+.responstable tr {
+    border: 1px solid #D9E4E6;
+    height: 30px;
+    width: 400px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+.responstable th {
+    border: 1px solid #D9E4E6;
+    background-color: rgb(92, 187, 224);
+    color: #ffffff;
+}
+
+#rankbody {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 180px;
+    padding: 0px 5px;
+}
+
+#scorebody {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    min-height: 180px;
+    padding: 0px 5px;
+}
+
+#frgtpass a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+#frgtpass a:hover {
+    text-decoration: underline;
+}
+
+select {
+    color: #44443d;
+    padding: 0px;
+    border: 1px solid rgb(203, 203, 203);
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #f5f5f5;
+    width: 250px;
+    border-radius: 7px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.subtwbtn {
+    text-align: center;
+    margin: 0px;
+}
+
+.hidswbtn {
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 452px) {
+    ul li a {
+        padding: 10px 10px;
+    }
+
+}

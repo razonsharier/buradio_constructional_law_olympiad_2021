@@ -1,0 +1,31 @@
+label {
+    font-family: bangla;
+}
+
+@media screen and (max-width: 415px) {
+    #header {
+        background-color: #ffffff;
+        height: 100px;
+        padding: 5px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+
+    }
+
+    .right a {
+        margin: 0 auto;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .left {
+        display: inline-block;
+    }
+
+}
