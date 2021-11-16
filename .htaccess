@@ -1,7 +1,7 @@
 RewriteEngine on
 RewriteRule ^home?$ index.php?go=home
 RewriteRule ^regChecker?$ index.php?go=regChecker
-##RewriteRule ^scoreboard?$ index.php?go=scoreboard
+#RewriteRule ^scoreboard?$ index.php?go=scoreboard
 RewriteRule ^login?$ index.php?go=login
 RewriteRule ^registration?$ index.php?go=registration
 RewriteRule ^forgetpass?$ index.php?go=forgetpass
