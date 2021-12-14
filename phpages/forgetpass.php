@@ -128,17 +128,17 @@ if (isset($_POST['recover'])) {
 
             //SMTP Settings
             $mail->isSMTP();
-            $mail->Host = "mail.buradio.org";
+            $mail->Host = "--HOST NAME--";
             $mail->SMTPAuth = true;
             $mail->SMTPAutoTLS = true;
-            $mail->Username = "no-reply@olympiad.buradio.org";
-            $mail->Password = 'yH_ALB0yTF^t';
+            $mail->Username = "--SENDER EMAIL--";
+            $mail->Password = '--EMAIL PASSWORD--';
             $mail->Port = 465;
             $mail->SMTPSecure = "ssl";
 
             //Email Settings
             $mail->isHTML(true);
-            $mail->setFrom('info@buradio.com', 'National Constitution Law Olympiad');
+            $mail->setFrom('--SENDER EMAIL--', 'National Constitution Law Olympiad');
             $mail->addAddress($email); //enter you email address
             $mail->Subject = ($subject);
             $mail->Body = $message;
